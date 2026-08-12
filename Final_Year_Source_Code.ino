@@ -1,7 +1,7 @@
 /*********************** DEFINES & GLOBAL VARIABLES ************************/
 #define BLYNK_TEMPLATE_ID "TMPL3pzSYueE5"
 #define BLYNK_TEMPLATE_NAME "Iot plant irrigation "
-#define BLYNK_AUTH_TOKEN "zY1k_9SLEGHwoLg-qNOG0iXA06_7N1VC"
+#define BLYNK_AUTH_TOKEN "Enter your blynk authentication token here"
 bool contributorsShown = false;  // All flags are by default false
 bool fertilizerShownOnce = false;
 bool fertilizerCalculated = false;
@@ -62,10 +62,10 @@ unsigned long basePumpTime = 5000;
 
 /*********************** USER DEPENDENT INFORMATION ************************/
 
-String weatherApiKey = "571089fbd29c57b0f2adfcf0c97f901a";  //ENTER API KEY OF WEATHER APP
+String weatherApiKey = "Enter weather app API key here";  //ENTER API KEY OF WEATHER APP
 String city = "Kolkata";                                    //SELECT CITY
-const char* ssid = "realme 5";                              //INPUT SSID
-const char* password = "162ad1d00865";                      //INPUT PASSWORD
+const char* ssid = "Enter your ssid here";                              //INPUT SSID
+const char* password = "Enter your password here";                      //INPUT PASSWORD
 float lat = 22.93;                                          // INPUT LATITUDE AND LONGITUDE OF FARM
 float lon = 88.38;
 
