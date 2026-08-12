@@ -81,27 +81,27 @@ The project report describes the ESP32 as the central control unit responsible f
 
 # Key Features:
 
-## 1. Automatic Irrigation
+**1. Automatic Irrigation**
 
 The ESP32 continuously monitors soil moisture and automatically controls the water pump whenever irrigation is required.
 
 
-## 2. Soil Moisture Monitoring
+**2. Soil Moisture Monitoring**
 
 A capacitive soil moisture sensor provides the primary input for determining whether the soil requires irrigation.
 
 
-## 3. Real-Time Rain Detection
+**3. Real-Time Rain Detection**
 
 A rain sensor detects actual rainfall conditions.If rainfall is detected, irrigation can be paused or prevented to avoid unnecessary water usage.
 
 
-## 4. Weather Forecast Integration
+**4. Weather Forecast Integration**
 
 The system uses a weather API to check upcoming rainfall.The current implementation checks the next **12 hours** using four 3-hour forecast blocks.If rainfall is predicted, the irrigation decision can be overridden to conserve water.
 
 
-## 5. Soil pH Monitoring
+**5. Soil pH Monitoring**
 
 The pH sensor measures soil acidity/alkalinity.
 
@@ -113,7 +113,7 @@ The system classifies the soil into:
 For the `Others` crop mode, the pH classification also influences the soil moisture threshold.
 
 
-## 6. Crop-Specific Irrigation
+**6. Crop-Specific Irrigation**
 
 The user can select different crops from the Blynk interface.
 
@@ -128,7 +128,7 @@ Supported crops include:
 Each crop uses different moisture thresholds and base pump durations.
 
 
-## 7. Fertilizer Recommendation
+**7. Fertilizer Recommendation**
 
 Based on measured soil pH, the system recommends:
 - Fertilizer type
@@ -138,12 +138,12 @@ Based on measured soil pH, the system recommends:
 The recommendation is displayed through the Blynk interface.
 
 
-## 8. Water-Saving Analytics
+**8. Water-Saving Analytics**
 
 When irrigation is skipped because of rainfall, the system estimates how much water would have been used.The estimated saved water is accumulated and displayed through the Blynk dashboard.
 
 
-## 9. Fault Detection
+**9. Fault Detection**
 
 The system checks for abnormal sensor readings and identifies possible faults involving:
 - Soil moisture sensor
@@ -156,12 +156,12 @@ The system checks for abnormal sensor readings and identifies possible faults in
 The fault status can be displayed through Blynk.
 
 
-## 10. Tank Empty / Pump Protection
+**10. Tank Empty / Pump Protection**
 
 The ultrasonic sensor monitors the water reservoir.If the water level becomes critically low, the system can stop the pump and notify the user to prevent dry running.
 
 
-## 📡 11. Offline Operation
+**11. Offline Operation**
 
 Internet connectivity is not required for the basic irrigation function.
 
