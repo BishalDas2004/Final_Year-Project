@@ -39,79 +39,43 @@ The main objectives of the project are:
 <img width="556" height="424" alt="final_year_block_diagram" src="https://github.com/user-attachments/assets/035a2b35-a7fb-49f3-97dc-dd8497b180f6" />
 
 
+# Hardware Components:
 
-# How the System Works:
+ESP32 -	Main microcontroller and IoT communication
+Capacitive Soil Moisture Sensor	- Measures soil moisture
+DHT11	- Measures temperature and humidity
+HC-SR04 Ultrasonic Sensor -	Measures water-tank level
+YL-83 Rain Sensor -	Detects rainfall
+Analog Soil pH Sensor -	Measures soil pH
+L298N Motor Driver - Controls the DC pump
+DC Submersible Pump	- Performs irrigation
+LM2596 Buck Converter	- Provides regulated voltage
+Breadboard - Prototype circuit assembly
+DC Power Supply/Battery - System power
 
-The general operating sequence is:
+The project report describes the ESP32 as the central control unit responsible for sensor acquisition, processing, pump control, and IoT communication.
 
-                  
-START\n
-  │\n
-  ▼\n
-Initialize ESP32 and Sensors\n
-  │\n
-  ▼\n
-Attempt Wi-Fi Connection\n
-  │\n
-  ├───────────────┐\n
-  │               │\n
-Online          Offline\n
-  │               │\n
-  ▼               ▼\n
-Blynk/API       Local Mode\n
-  │               │\n
-  └───────┬───────┘\n
-          ▼\n
-Read Sensors\n
-          │\n
-          ▼\n
-Check Sensor Faults\n
-          │\n
-          ▼\n
-Check Water Tank Level\n
-          │\n
-          ▼\n
-Read Soil Moisture\n
-          │\n
-          ▼\n
-Check Rain Sensor\n
-          │\n
-          ▼\n
-Check Weather Forecast\n
-          │\n
-          ▼\n
-Check Selected Crop\n
-          │\n
-          ▼\n
-Evaluate Soil pH\n
-          │\n
-          ▼\n
-Calculate Irrigation Requirement\n
-          │\n
-       ┌──┴──┐\n
-       │     │\n
-      NO    YES\n
-       │     │\n
-       │     ▼\n
-       │  Check Rain\n
-       │     │\n
-       │  ┌──┴──┐\n
-       │  │     │\n
-       │ Rain  No Rain\n
-       │  │     │\n
-       │  ▼     ▼\n
-       │ Skip  Pump ON\n
-       │       │\n
-       │       ▼\n
-       │  Dynamic Runtime\n
-       │       │\n
-       └───────┘\n
-          │\n
-          ▼\n
-   Update Blynk / Analytics\n
-          │\n
-          ▼\n
-        LOOP\n
+# Software & Technologies:
+Programming - 
+   C/C++
+   Arduino IDE
+Microcontroller -
+   ESP32
+IoT Platform -
+   Blynk
+APIs -
+   OpenWeatherMap Weather API
+Libraries -
+   WiFi.h
+   BlynkSimpleEsp32.h
+   HTTPClient.h
+   ArduinoJson.h
+   DHT.h
+
+        
+
+       
+        
 
 
 
