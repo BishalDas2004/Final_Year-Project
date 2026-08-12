@@ -34,11 +34,6 @@ The main objectives of the project are:
 
 
 
-# Block Diagram:
-
-<img width="556" height="424" alt="final_year_block_diagram" src="https://github.com/user-attachments/assets/035a2b35-a7fb-49f3-97dc-dd8497b180f6" />
-
-
 # Hardware Components:
 
 ESP32 -	Main microcontroller and IoT communication
@@ -71,6 +66,14 @@ Libraries -
    HTTPClient.h
    ArduinoJson.h
    DHT.h
+
+
+# Block Diagram:
+
+<img width="556" height="424" alt="final_year_block_diagram" src="https://github.com/user-attachments/assets/035a2b35-a7fb-49f3-97dc-dd8497b180f6" />
+
+
+
 
         
 
