@@ -45,73 +45,73 @@ The main objectives of the project are:
 The general operating sequence is:
 
                   
-START
-  │
-  ▼
-Initialize ESP32 and Sensors
-  │
-  ▼
-Attempt Wi-Fi Connection
-  │
-  ├───────────────┐
-  │               │
-Online          Offline
-  │               │
-  ▼               ▼
-Blynk/API       Local Mode
-  │               │
-  └───────┬───────┘
-          ▼
-Read Sensors
-          │
-          ▼
-Check Sensor Faults
-          │
-          ▼
-Check Water Tank Level
-          │
-          ▼
-Read Soil Moisture
-          │
-          ▼
-Check Rain Sensor
-          │
-          ▼
-Check Weather Forecast
-          │
-          ▼
-Check Selected Crop
-          │
-          ▼
-Evaluate Soil pH
-          │
-          ▼
-Calculate Irrigation Requirement
-          │
-       ┌──┴──┐
-       │     │
-      NO    YES
-       │     │
-       │     ▼
-       │  Check Rain
-       │     │
-       │  ┌──┴──┐
-       │  │     │
-       │ Rain  No Rain
-       │  │     │
-       │  ▼     ▼
-       │ Skip  Pump ON
-       │       │
-       │       ▼
-       │  Dynamic Runtime
-       │       │
-       └───────┘
-          │
-          ▼
-   Update Blynk / Analytics
-          │
-          ▼
-        LOOP
+START\n
+  │\n
+  ▼\n
+Initialize ESP32 and Sensors\n
+  │\n
+  ▼\n
+Attempt Wi-Fi Connection\n
+  │\n
+  ├───────────────┐\n
+  │               │\n
+Online          Offline\n
+  │               │\n
+  ▼               ▼\n
+Blynk/API       Local Mode\n
+  │               │\n
+  └───────┬───────┘\n
+          ▼\n
+Read Sensors\n
+          │\n
+          ▼\n
+Check Sensor Faults\n
+          │\n
+          ▼\n
+Check Water Tank Level\n
+          │\n
+          ▼\n
+Read Soil Moisture\n
+          │\n
+          ▼\n
+Check Rain Sensor\n
+          │\n
+          ▼\n
+Check Weather Forecast\n
+          │\n
+          ▼\n
+Check Selected Crop\n
+          │\n
+          ▼\n
+Evaluate Soil pH\n
+          │\n
+          ▼\n
+Calculate Irrigation Requirement\n
+          │\n
+       ┌──┴──┐\n
+       │     │\n
+      NO    YES\n
+       │     │\n
+       │     ▼\n
+       │  Check Rain\n
+       │     │\n
+       │  ┌──┴──┐\n
+       │  │     │\n
+       │ Rain  No Rain\n
+       │  │     │\n
+       │  ▼     ▼\n
+       │ Skip  Pump ON\n
+       │       │\n
+       │       ▼\n
+       │  Dynamic Runtime\n
+       │       │\n
+       └───────┘\n
+          │\n
+          ▼\n
+   Update Blynk / Analytics\n
+          │\n
+          ▼\n
+        LOOP\n
 
 
 
