@@ -36,41 +36,42 @@ The main objectives of the project are:
 
 # Hardware Components:
 
-ESP32 -	Main microcontroller and IoT communication
-Capacitive Soil Moisture Sensor	- Measures soil moisture
-DHT11	- Measures temperature and humidity
-HC-SR04 Ultrasonic Sensor -	Measures water-tank level
-YL-83 Rain Sensor -	Detects rainfall
-Analog Soil pH Sensor -	Measures soil pH
-L298N Motor Driver - Controls the DC pump
-DC Submersible Pump	- Performs irrigation
-LM2596 Buck Converter	- Provides regulated voltage
-Breadboard - Prototype circuit assembly
-DC Power Supply/Battery - System power
+1. ESP32 -	Main microcontroller and IoT communication
+2. Capacitive Soil Moisture Sensor	- Measures soil moisture
+3. DHT11	- Measures temperature and humidity
+4. HC-SR04 Ultrasonic Sensor -	Measures water-tank level
+5. YL-83 Rain Sensor -	Detects rainfall
+6. Analog Soil pH Sensor -	Measures soil pH
+7. L298N Motor Driver - Controls the DC pump
+8. DC Submersible Pump	- Performs irrigation
+9. LM2596 Buck Converter	- Provides regulated voltage
+10. Breadboard - Prototype circuit assembly
+11. DC Power Supply/Battery - System power
 
 The project report describes the ESP32 as the central control unit responsible for sensor acquisition, processing, pump control, and IoT communication.
 
 # Software & Technologies:
-Programming - 
-   C/C++
-   Arduino IDE
-Microcontroller -
-   ESP32
-IoT Platform -
-   Blynk
-APIs -
-   OpenWeatherMap Weather API
-Libraries -
-   WiFi.h
-   BlynkSimpleEsp32.h
-   HTTPClient.h
-   ArduinoJson.h
-   DHT.h
+
+1. Programming
+- C/C++
+- Arduino IDE
+2. Microcontroller 
+- ESP32
+3. IoT Platform 
+- Blynk
+4. APIs 
+- OpenWeatherMap Weather API
+5. Libraries
+- WiFi.h
+- BlynkSimpleEsp32.h
+- HTTPClient.h
+- ArduinoJson.h
+- DHT.h
 
 
 # Block Diagram:
 
-<img width="556" height="424" alt="final_year_block_diagram" src="https://github.com/user-attachments/assets/035a2b35-a7fb-49f3-97dc-dd8497b180f6" />
+<img width="600" height="450" alt="final_year_block_diagram" src="https://github.com/user-attachments/assets/035a2b35-a7fb-49f3-97dc-dd8497b180f6" />
 
 
 
