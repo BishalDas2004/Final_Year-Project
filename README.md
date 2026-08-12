@@ -1,3 +1,7 @@
+# SMART PLANT IRRIGATION USING IOT
+
+
+
 # Project Overview:
 
 Traditional irrigation systems often depend on manual watering or fixed schedules. Such methods may result in over-irrigation, under-irrigation, water wastage, and unnecessary human effort.This project proposes an **IoT-based Smart Irrigation System** that continuously monitors important environmental and soil parameters and automatically decides when irrigation is required.
@@ -36,36 +40,36 @@ The main objectives of the project are:
 
 # Hardware Components:
 
-1. ESP32 -	Main microcontroller and IoT communication
-2. Capacitive Soil Moisture Sensor	- Measures soil moisture
-3. DHT11	- Measures temperature and humidity
-4. HC-SR04 Ultrasonic Sensor -	Measures water-tank level
-5. YL-83 Rain Sensor -	Detects rainfall
-6. Analog Soil pH Sensor -	Measures soil pH
-7. L298N Motor Driver - Controls the DC pump
-8. DC Submersible Pump	- Performs irrigation
-9. LM2596 Buck Converter	- Provides regulated voltage
-10. Breadboard - Prototype circuit assembly
-11. DC Power Supply/Battery - System power
+1. **ESP32** -	Main microcontroller and IoT communication
+2. **Capacitive Soil Moisture Sensor**	- Measures soil moisture
+3. **DHT11**	- Measures temperature and humidity
+4. **HC-SR04 Ultrasonic Sensor** -	Measures water-tank level
+5. **YL-83 Rain Sensor** -	Detects rainfall
+6. **Analog Soil pH Sensor** -	Measures soil pH
+7. **L298N Motor Driver** - Controls the DC pump
+8. **DC Submersible Pump**	- Performs irrigation
+9. **LM2596 Buck Converter**	- Provides regulated voltage
+10. **Breadboard** - Prototype circuit assembly
+11. **DC Power Supply/Battery** - System power
 
 The project report describes the ESP32 as the central control unit responsible for sensor acquisition, processing, pump control, and IoT communication.
 
 # Software & Technologies:
 
-1. Programming
+1. **Programming**
 - C/C++
 - Arduino IDE
 
-2. Microcontroller 
+2. **Microcontroller**
 - ESP32
 
-3. IoT Platform 
+3. **IoT Platform**
 - Blynk
 
-4. APIs 
+4. **APIs** 
 - OpenWeatherMap Weather API
 
-5. Libraries
+5. **Libraries**
 - WiFi.h
 - BlynkSimpleEsp32.h
 - HTTPClient.h
