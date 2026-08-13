@@ -79,7 +79,8 @@ The project report describes the ESP32 as the central control unit responsible f
 
 # Block Diagram:
 
-<img width="564" height="459" alt="Final_Year_Block_Diagram" src="https://github.com/user-attachments/assets/6b63fb85-2de4-440b-a258-701d7dad9733" />
+<img width="564" height="455" alt="Final_Year_Block_Diagram" src="https://github.com/user-attachments/assets/3b94180b-a857-4222-b5c2-fe56645fb0fb" />
+
 
 
 
